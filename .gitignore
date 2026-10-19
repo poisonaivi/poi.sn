@@ -1,4 +1,4 @@
-aiviparty.code-workspace
 .DS_Store
-public/clock.html
 .vscode/settings.json
+.wrangler
+node_modules
