@@ -8,7 +8,7 @@ div#lightbox {
     display: none;
     opacity: 0;
     backdrop-filter: blur(0);
-    transition: cubic-bezier(0.165, 0.84, 0.44, 1) 400ms;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) 300ms;
     &::before {
         content: "";
         position: fixed;
