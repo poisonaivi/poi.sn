@@ -60,7 +60,7 @@
     --border-radius: 12px;
     --border-width: 2px;
     --border-spacing: 6px;
-    --magenta-filter: sepia(1) hue-rotate(240deg) saturate(2) brightness(0.9);
+    --magenta-filter: sepia(1) hue-rotate(240deg) saturate(2) brightness(0.75);
     --d-crt-overlay: linear-gradient(0deg, #0006 10%, #0000 40%, #0000 60%, #0006 90%), linear-gradient(90deg, #7701 10%, #2261 40%, #2261 60%, #7701 90%);
     --crt-overlay: var(--d-crt-overlay);
     --d-crt-filter: brightness(1.5) saturate(1.25) blur(0.5px);
