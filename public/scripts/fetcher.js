@@ -18,25 +18,25 @@ async function updateDiscord() {
         const status = resJSON.status;
         const activities = resJSON.activities;
         const statusText = resJSON.text;
-        if (status == "online") {
+        if (status == "online" || status == "idle") {
             presenceLabel.innerHTML = "ONLINE";
             presenceLabel.className = "success";
             presenceIcon.className = "icon inline-left success";
             presenceIcon.src = "/assets/icons/status-online.png";
             discordSection.className = "success";
-        } else if (status == "idle") {
-            presenceLabel.innerHTML = "IDLE";
-            presenceLabel.className = "warning";
-            presenceIcon.className = "icon inline-left warning";
-            presenceIcon.src = "/assets/icons/status-idle.png";
-            discordSection.className = "warning";
-        } else if (status == "dnd") {
-            presenceLabel.innerHTML = "DO NOT DISTURB";
-            presenceLabel.className = "danger";
-            presenceIcon.className = "icon inline-left danger";
-            presenceIcon.src = "/assets/icons/status-dnd.png";
-            discordSection.className = "danger";
-        } else if (status == "offline") {
+        // } else if (status == "idle") {
+        //     presenceLabel.innerHTML = "IDLE";
+        //     presenceLabel.className = "warning";
+        //     presenceIcon.className = "icon inline-left warning";
+        //     presenceIcon.src = "/assets/icons/status-idle.png";
+        //     discordSection.className = "warning";
+        // } else if (status == "dnd") {
+        //     presenceLabel.innerHTML = "DO NOT DISTURB";
+        //     presenceLabel.className = "danger";
+        //     presenceIcon.className = "icon inline-left danger";
+        //     presenceIcon.src = "/assets/icons/status-dnd.png";
+        //     discordSection.className = "danger";
+        } else if (status == "offline" || status == "dnd") {
             presenceLabel.innerHTML = "OFFLINE";
             presenceLabel.className = "danger";
             presenceIcon.className = "icon inline-left danger";
@@ -54,7 +54,7 @@ async function updateDiscord() {
                 statusLabelText += "<small>in " + activities[i].replace("<", "&lt;").replace(">", "&gt;") + "</small><br>";
             }
         }
-        if (statusLabelText != "") {
+        if (statusLabelText != "" && status != "offline" && status != "dnd") {
             statusLabel.innerHTML = statusLabelText;
         } else {
             statusLabel.innerHTML = "<small>the keeper is silent now</small>";
