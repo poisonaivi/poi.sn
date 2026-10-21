@@ -87,8 +87,6 @@ export default {
             } catch (error) {
                 console.error(error);
             }
-        // } else if (path[0] == "blog") {
-        //     return blogNotFound();
         } else {
             return pageNotFound();
         }
@@ -135,37 +133,6 @@ async function pageNotFound() {
             </section>
             <footer id="footer"><script>loadElement("simpleFooter.html", "footer");</script></footer> 
         </main>
-    </body>
-    </html>`;
-    return new Response(html, {
-        status: 404,
-        headers: {
-            "content-type": "text/html;charset=UTF-8",
-        }
-    });
-}
-
-async function blogNotFound() {
-    const html = `<!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=0.38">
-        <title>404 Not Found</title>
-        <script src="/scripts/loader.js"></script>
-        <link rel="stylesheet" href="/styles/article.css">
-    </head>
-    <body>
-        <header id="header"><script>loadElement("blogHeader.html", "header");</script></header>
-        <main>
-            <article style="text-align: center;">
-                <h1 class="danger" style="font-size: 600%; text-shadow: -40px 0 var(--danger-b), 40px 0 var(--danger-b), -80px 0 var(--danger-c), 80px 0 var(--danger-c), -120px 0 var(--danger-d), 120px 0 var(--danger-d);">404</h1>
-                <h2>not found</h2>
-                <p>You can still check out the <a href="/blog/last.html">latest post</a> or <a href="/blog/index.html">see a list of posts</a>.</p>
-                <div style="height: 20px;"></div>
-            </article>
-        </main>
-        <footer id="footer"><script>loadElement("simpleFooter.html", "footer");</script></footer> 
     </body>
     </html>`;
     return new Response(html, {
