@@ -1,8 +1,12 @@
 function accMenuOpen() {
-    document.getElementById("acc-menu").style.visibility = "visible";
+    const menu = document.getElementById("acc-menu");
+    menu.style.opacity = 1;
+    menu.style.visibility = "visible";
 }
 function accMenuClose() {
-    document.getElementById("acc-menu").style.visibility = "hidden";
+    const menu = document.getElementById("acc-menu");
+    menu.style.opacity = 0;
+    menu.style.visibility = "hidden";
 }
 function accRecall() {
     optionIds = ["novfx", "contrast", "monofont"];
