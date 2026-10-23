@@ -8,7 +8,8 @@ async function loadElement(filename, elementid) {
         }
         const element = document.getElementById(elementid);
         if (element == null) {
-            throw new Error("elementid does not exist within the document.");
+            // throw new Error("elementid does not exist within the document.");
+            return;
         }
         const res = await fetch("/layout/" + filename);
         if (!res.ok) {

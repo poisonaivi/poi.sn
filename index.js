@@ -131,7 +131,7 @@ async function pageNotFound() {
                 <br><br>
                 <p><a href="/index.html"><img class="icon inline-left" src="/assets/icons/arrow-rr.png" style="animation: shake 1s steps(1) infinite;">return home<img class="icon inline-right" src="/assets/icons/arrow-ll.png" style="animation: shake 1s steps(1) infinite; animation-delay: 500ms;"></a></p>
             </section>
-            <footer id="footer"><script>loadElement("simpleFooter.html", "footer");</script></footer> 
+            <footer id="simpleFooter"><script defer src="/scripts/footer.js"></script></footer> 
         </main>
     </body>
     </html>`;
