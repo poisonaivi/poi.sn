@@ -54,14 +54,14 @@ h1 {
 }
 h2 {
     font-size: 200%;
-    margin-top: 2em;
 }
 h3 {
     font-size: 150%;
 }
 p {
-    line-height: 150%;
+    line-height: 180%;
     text-align: justify;
+    margin-bottom: 2em;
 }
 a {
     color: var(--link);
