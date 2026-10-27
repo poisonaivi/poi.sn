@@ -38,6 +38,9 @@
     --section-b: #101;
     --d-border: #323;
     --border: var(--d-border);
+    --d-border-b: #424;
+    --border-b: var(--d-border-ba);
+    --border-c: #101;
     --link: #b9f;
     --d-link-b: #436;
     --link-b: var(--d-link-b);
@@ -59,6 +62,7 @@
     --danger-c: #200;
     --border-radius: 12px;
     --border-width: 2px;
+    --hidden-border-width: 0px;
     --border-spacing: 6px;
     --magenta-filter: sepia(1) hue-rotate(240deg) saturate(2) brightness(0.75);
     --d-crt-overlay: linear-gradient(0deg, #0006 10%, #0000 40%, #0000 60%, #0006 90%), linear-gradient(90deg, #7701 10%, #2261 40%, #2261 60%, #7701 90%);
@@ -176,7 +180,7 @@ section {
     margin: 0 calc(var(--border-spacing) / 2) var(--border-spacing) calc(var(--border-spacing) / 2);
     padding: calc(var(--border-spacing) + 4px);
     background: linear-gradient(var(--section), var(--section-b));
-    box-shadow: inset 0 0 20px var(--section);
+    box-shadow: inset 0 0 20px var(--section-b);
     border: var(--border-width) solid var(--border);
     border-radius: var(--border-radius);
     position: relative;
@@ -185,10 +189,27 @@ section {
     .title-bar {
         position: relative;
         z-index: 10;
-        background: linear-gradient(90deg, var(--border), var(--section-b));
-        margin: calc(-4px - (var(--border-spacing)));
+        background: linear-gradient(90deg, var(--border-b), var(--border-c));
+        margin: calc(-1px - (var(--border-spacing)));
         margin-bottom: calc(var(--border-spacing) + 4px);
         padding: 1px calc(var(--border-radius));
+        border-radius: calc(var(--border-radius) - 5px);
+        border: var(--hidden-border-width) dashed var(--border);
+    }
+    section {
+        border-radius: calc(var(--border-radius) - var(--border-spacing));
+        .title-bar {
+            border-radius: calc(var(--border-radius) - 4px - var(--border-spacing));
+        }
+    }
+    section:not(.thumbnail) {
+        margin: 0 -4.5px var(--border-spacing) -4.5px;
+        &:first-of-type {
+            margin-top: -4px;
+        }
+        &:last-child {
+        margin-bottom: -4px;
+        }
     }
     &#header-section {
         border-top-left-radius: 0;
@@ -201,6 +222,7 @@ section {
         border-color: var(--success);
         .title-bar {
             background: linear-gradient(90deg, var(--success-b), var(--success-c));
+            border-color: var(--success);
         }
     }
     &.warning {
@@ -208,6 +230,7 @@ section {
         border-color: var(--warning);
         .title-bar {
             background: linear-gradient(90deg, var(--warning-b), var(--warning-c));
+            border-color: var(--warning);
         }
     }
     &.danger {
@@ -215,6 +238,7 @@ section {
         border-color: var(--danger);
         .title-bar {
             background: linear-gradient(90deg, var(--danger-b), var(--danger-c));
+            border-color: var(--danger);
         }
     }
     &.important {
@@ -222,18 +246,7 @@ section {
         border-color: var(--accent);
         .title-bar {
             background: linear-gradient(90deg, var(--accent-b), var(--accent-c));
-        }
-    }
-    section {
-        border-radius: calc(var(--border-radius) - var(--border-spacing));
-    }
-    section:not(.thumbnail) {
-        margin: 0 -4.5px var(--border-spacing) -4.5px;
-        &:first-of-type {
-            margin-top: -4px;
-        }
-        &:last-child {
-        margin-bottom: -4px;
+            border-color: var(--accent);
         }
     }
 }
@@ -466,28 +479,24 @@ marquee {
 .button {
     display: inline-block;
     position: relative;
-    padding: 2px 12px;
-    background: linear-gradient(var(--accent-c) 40%, var(--accent-b));
-    border: solid 1px var(--accent);
-    border-radius: 10px;
-    box-shadow: 0 0 6px var(--accent);
+    padding: 3px 12px;
+    background: linear-gradient(var(--accent-c) 40%, var(--accent-b) 90%);
+    border-radius: 20px;
+    box-shadow: inset 0 0 3px var(--accent), inset 0 -2px 2px var(--accent), 0 0 4px var(--accent);
     z-index: 2;
     &::before {
         content: "";
-        background: linear-gradient(var(--link), #0000);
+        background: linear-gradient(var(--link), #0000 80%);
         position: absolute;
         top: 2px;
-        left: 4px;
-        width: calc(100% - 8px);
-        height: 7px;
-        border-radius: 5px 5px 0 0;
-    }
-    &:hover {
-        border-style: dashed;
+        left: 6px;
+        width: calc(100% - 12px);
+        height: 14px;
+        border-radius: 7px;
     }
     &.selected {
         background: linear-gradient(var(--success-c) 40%, var(--success-b));
-        box-shadow: 0 0 12px var(--success);
+        box-shadow: inset 0 0 3px var(--success), inset 0 -2px 2px var(--success), 0 0 8px var(--success);
         z-index: 1;
         &::before {
             background: linear-gradient(var(--warning), #0000 70%);

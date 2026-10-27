@@ -48,6 +48,7 @@ function accApply() {
     }
     if (options[1]) {
         root.style.setProperty('--border', '#858');
+        root.style.setProperty('--border-b', '#212');
         root.style.setProperty('--small-text', '#888');
         root.style.setProperty('--text-b', '#222');
         root.style.setProperty('--link-b', '#102');
@@ -55,8 +56,10 @@ function accApply() {
         root.style.setProperty('--success-b', '#021');
         root.style.setProperty('--warning-b', '#221');
         root.style.setProperty('--danger-b', '#201');
+        root.style.setProperty('--hidden-border-width', '1px');
     } else {
         root.style.setProperty('--border', 'var(--d-border)');
+        root.style.setProperty('--border-b', 'var(--d-border-b)');
         root.style.setProperty('--small-text', 'var(--d-small-text)');
         root.style.setProperty('--text-b', 'var(--d-text-b)');
         root.style.setProperty('--link-b', 'var(--d-link-b)');
@@ -64,6 +67,7 @@ function accApply() {
         root.style.setProperty('--success-b', 'var(--d-success-b)');
         root.style.setProperty('--warning-b', 'var(--d-warning-b)');
         root.style.setProperty('--danger-b', 'var(--d-danger-b)');
+        root.style.setProperty('--hidden-border-width', '0px');
     }
     if (options[2]) {
         root.style.setProperty('--font-family', "acc-monospace");
