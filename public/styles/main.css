@@ -49,18 +49,18 @@
     --accent-b: var(--d-accent-b);
     --accent-c: #202;
     --success: #0f3;
-    --d-success-b: #051;
+    --d-success-b: #061;
     --success-b: var(--d-success-b);
     --success-c: #020;
     --warning: #ff3;
-    --d-warning-b: #662;
+    --d-warning-b: #661;
     --warning-b: var(--d-warning-b);
     --warning-c: #221;
     --danger: #f03;
-    --d-danger-b: #501;
+    --d-danger-b: #601;
     --danger-b: var(--d-danger-b);
     --danger-c: #200;
-    --border-radius: 12px;
+    --border-radius: 14px;
     --border-width: 2px;
     --hidden-border-width: 0px;
     --border-spacing: 6px;
@@ -180,7 +180,7 @@ section {
     margin: 0 calc(var(--border-spacing) / 2) var(--border-spacing) calc(var(--border-spacing) / 2);
     padding: calc(var(--border-spacing) + 4px);
     background: linear-gradient(var(--section), var(--section-b));
-    box-shadow: inset 0 0 20px var(--section-b);
+    box-shadow: inset 0 -2px 8px var(--border-b);
     border: var(--border-width) solid var(--border);
     border-radius: var(--border-radius);
     position: relative;
@@ -189,7 +189,7 @@ section {
     .title-bar {
         position: relative;
         z-index: 10;
-        background: linear-gradient(90deg, var(--border-b), var(--border-c));
+        background: linear-gradient(90deg, var(--border-b), var(--section-b));
         margin: calc(-1px - (var(--border-spacing)));
         margin-bottom: calc(var(--border-spacing) + 4px);
         padding: 1px calc(var(--border-radius));
@@ -220,6 +220,7 @@ section {
     &.success {
         background: linear-gradient(var(--section), var(--success-c));
         border-color: var(--success);
+        box-shadow: inset 0 -6px 12px var(--success-b);
         .title-bar {
             background: linear-gradient(90deg, var(--success-b), var(--success-c));
             border-color: var(--success);
@@ -228,6 +229,7 @@ section {
     &.warning {
         background: linear-gradient(var(--section), var(--warning-c));
         border-color: var(--warning);
+        box-shadow: inset 0 -6px 12px var(--warning-b);
         .title-bar {
             background: linear-gradient(90deg, var(--warning-b), var(--warning-c));
             border-color: var(--warning);
@@ -236,6 +238,7 @@ section {
     &.danger {
         background: linear-gradient(var(--section), var(--danger-c));
         border-color: var(--danger);
+        box-shadow: inset 0 -6px 12px var(--danger-b);
         .title-bar {
             background: linear-gradient(90deg, var(--danger-b), var(--danger-c));
             border-color: var(--danger);
@@ -244,6 +247,7 @@ section {
     &.important {
         background: linear-gradient(var(--section), var(--accent-c));
         border-color: var(--accent);
+        box-shadow: inset 0 -6px 12px var(--accent-b);
         .title-bar {
             background: linear-gradient(90deg, var(--accent-b), var(--accent-c));
             border-color: var(--accent);
