@@ -39,7 +39,7 @@
     --d-border: #323;
     --border: var(--d-border);
     --d-border-b: #424;
-    --border-b: var(--d-border-ba);
+    --border-b: var(--d-border-b);
     --border-c: #101;
     --link: #b9f;
     --d-link-b: #436;
@@ -72,7 +72,7 @@
     --d-font-family: "Monopix", "Ubuntu Mono", monospace;
     --font-family: var(--d-font-family);
     --d-font-family-s: "Monopix XS", "Ubuntu Mono", monospace;
-    --font-family-s: var(--d-font-family);
+    --font-family-s: var(--d-font-family-s);
     --cursor-pointer: url("/assets/ui/cursor-pointer.png") 10 5, pointer;
     --cursor-default: url("/assets/ui/cursor-default.png") 5 5, auto;
     --cursor-text: url("/assets/ui/cursor-text.png") 7 11, auto;
