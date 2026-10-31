@@ -17,6 +17,7 @@ function updateFunTitle() {
         "do you come here often?",
         "make websites, not war",
         "create art, not war",
+        "make love, not war",
         "yet another web corner",
         "i hope you like purple",
         "cringe culture is dead",

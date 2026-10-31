@@ -33,14 +33,15 @@
     font-size: 18px;
     font-family: "Monopix XL";
     background-color: var(--bg);
-    background-image: linear-gradient(0deg, var(--bg-b) 2%, #0000 2%), linear-gradient(90deg, var(--bg-b) 2%, #0000 2%);
-    background-size: 70px 70px;
+    background-image: linear-gradient(180deg, var(--bg-b) 3%, #0000 3%,#0000 26%, var(--bg-b) 26%, var(--bg-b) 27%, #0000 27%, #0000 51%, var(--bg-b) 51%, var(--bg-b) 52%, #0000 52%, #0000 76%, var(--bg-b) 76%, var(--bg-b) 77%, #0000 77%), linear-gradient(90deg, var(--bg-b) 3%, #0000 3%,#0000 26%, var(--bg-b) 26%, var(--bg-b) 27%, #0000 27%, #0000 51%, var(--bg-b) 51%, var(--bg-b) 52%, #0000 52%, #0000 76%, var(--bg-b) 76%, var(--bg-b) 77%, #0000 77%); 
+    background-size: 100px 100px;
+    background-position: calc(50% + 49px) 5px;
     color: var(--text);
     -webkit-text-size-adjust: none;
     image-rendering: pixelated;
 }
 article, header, footer {
-    max-width: 600px;
+    max-width: 580px;
     margin: 0 auto;
     padding: 10px;
 }

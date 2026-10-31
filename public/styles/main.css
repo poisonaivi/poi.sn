@@ -146,20 +146,21 @@ span {
     text-shadow: inherit;
     position: relative;
 }
+a, details > summary {
+    &:hover {
+        opacity: 0.75;
+        text-decoration: underline dashed;
+    }
+    &:active {
+        opacity: 0.6;
+    }
+}
 a, a p {
     color: var(--link);
     text-shadow: 0.032em 0.032em var(--link-b), 0.032em -0.032em var(--link-b), -0.032em -0.032em var(--link-b), -0.032em 0.032em var(--link-b), 0.092em 0.092em var(--shadow), 0 0 0.5em var(--link);
     text-decoration: none;
     text-decoration-thickness: 1px;
     cursor: var(--cursor-pointer);
-    &:hover {
-        opacity: 0.75;
-        text-decoration: underline;
-        text-decoration-style: dashed;    
-    }
-    &:active {
-        opacity: 0.6;
-    }
     &::selection {
         color: var(--link);
         text-shadow: 0.032em 0.032em var(--link-b), 0.032em -0.032em var(--link-b), -0.032em -0.032em var(--link-b), -0.032em 0.032em var(--link-b), 0.092em 0.092em var(--shadow);
@@ -338,13 +339,6 @@ textarea {
 details > summary {
     cursor: var(--cursor-pointer);
     list-style-type: none;
-    &:hover {
-        opacity: 0.6;
-        text-decoration: underline dashed;
-    }
-    &:active {
-        opacity: 0.4;
-    }
     &::-webkit-details-marker {
         display: none;
     }
@@ -488,6 +482,12 @@ marquee {
     border-radius: 20px;
     box-shadow: inset 0 0 3px var(--accent), inset 0 -2px 2px var(--accent), 0 0 4px var(--accent);
     z-index: 2;
+    &:hover {
+        transition: opacity 150ms cubic-bezier(0, 5, 1, -4);
+    }
+    &:active {
+        transition: none;
+    }
     &::before {
         content: "";
         background: linear-gradient(var(--link), #0000 80%);
