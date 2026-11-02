@@ -38,12 +38,14 @@
     background-position: calc(50% + 49px) 5px;
     color: var(--text);
     -webkit-text-size-adjust: none;
-    image-rendering: pixelated;
 }
 article, header, footer {
     max-width: 580px;
     margin: 0 auto;
     padding: 10px;
+}
+header, footer {
+    image-rendering: pixelated;
 }
 h1, h2, h3, h4, h5, h6 {
     color: var(--text-b);
@@ -111,6 +113,7 @@ code {
     }
 }
 .icon {
+    image-rendering: pixelated;
     display: inline-block;
     height: 1em;
     margin-bottom: -0.16em;

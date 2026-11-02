@@ -5,7 +5,7 @@ export default {
         if (path[0] == "api") {
             try {
                 if (path[1] == "music") {
-                    const res = await fetch("https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=am3thystx&api_key=e7e7db3733ebd1413a1466b1ab6117de&format=json&limit=1");
+                    const res = await fetch("https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=psnaivi&api_key=e7e7db3733ebd1413a1466b1ab6117de&format=json&limit=1");
                     if (!res.ok) {
                         throw new Error("Bad response from Last.fm.");
                     }

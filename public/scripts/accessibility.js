@@ -87,3 +87,7 @@ var options;
 var optionIds;
 accRecall();
 accApply();
+addEventListener("keydown", (event) => {
+    if (event.key == "Escape")
+        accMenuClose();
+});

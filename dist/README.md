@@ -1,1 +1,0 @@
-This folder contains the built output assets for the worker "aiviparty" generated at 2026-01-23T13:51:26.102Z.

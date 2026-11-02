@@ -5,14 +5,12 @@
         ascent-override: 90%;
         descent-override: 37%;
     }
-
     :root {
         --acc-accent: #84c;
         --acc-border: #fff;
         --acc-accent-text: #fff;
         --acc-bg: #ccc;
     }
-
     #acc-button {
         width: 45px;
         aspect-ratio: 1;
@@ -26,13 +24,13 @@
         background-color: var(--acc-accent);
         background-image: url(/assets/icons/accessibility.png);
         background-size: cover;
+        image-rendering: pixelated;
         transition: cubic-bezier(0.165, 0.84, 0.44, 1) 300ms;
         &:hover, &:focus {
             width: 75px;
             border-radius: 24px;
         }
     }
-
     #acc-menu {
         visibility: hidden;
         width: 500px;
@@ -48,6 +46,7 @@
         background: var(--acc-accent);
         border: solid 3px var(--acc-accent);
         box-shadow: 0 0 20px #000;
+        image-rendering: pixelated;
         overflow: hidden;
         font-family: Verdana, acc-monospace, sans-serif;
         color: #000;
@@ -63,7 +62,6 @@
             margin: 10px 0;
         }
     }
-
     button {
         border: none;
         background: none;
@@ -74,7 +72,19 @@
             cursor: pointer;
         }
     }
-
+    .acc-key {
+        font-size: 0.8em;
+        font-family: "Ubuntu Mono", monospace;
+        border-radius: 4px;
+        display: inline-block;
+        position: relative;
+        translate: 0 -2px;
+        margin-right: 4px;
+        padding: 0 3px;
+        background-color: #222;
+        border: solid 1px var(--acc-bg);
+        box-shadow: 0 3px #222;
+    }
     .acc-title {
         color: var(--acc-accent-text);
         padding: 8px 16px 10px;
@@ -90,7 +100,7 @@
 <div id="acc-menu">
     <div class="acc-title">
         <img src="/assets/icons/accessibility.png" onload="accLoaded();" style="float: left; translate: 0, 5px;">&nbsp;<b>Accessibility Options</b>
-        <button onclick="accMenuClose();" style="float: right; transform: translateY(-1px);" title="Close Accessibility Menu"><u>Close</u></button>
+        <button onclick="accMenuClose();" style="float: right; transform: translateY(-1px);" title="Close Accessibility Menu"><span class="acc-key">ESC</span><u>Close</u></button>
     </div>
     <div class="acc-options">
         <fieldset>

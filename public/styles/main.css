@@ -87,7 +87,6 @@ body {
     background-color: black;
     background-image: url("/assets/images/background-tile.png");
     background-size: 580px;
-    image-rendering: pixelated;
     cursor: var(--cursor-default);
     &::selection {
         background-color: var(--selection);
@@ -193,9 +192,9 @@ section {
         background: linear-gradient(90deg, var(--border-b), var(--section-b));
         margin: calc(-1px - (var(--border-spacing)));
         margin-bottom: calc(var(--border-spacing) + 4px);
-        padding: 1px calc(var(--border-radius));
+        padding: 1px var(--border-spacing);
         border-radius: calc(var(--border-radius) - 5px);
-        border: var(--hidden-border-width) dashed var(--border);
+        outline: var(--hidden-border-width) dashed var(--border);
     }
     section {
         border-radius: calc(var(--border-radius) - var(--border-spacing));
@@ -217,6 +216,9 @@ section {
         border-top-right-radius: 0;
         border-top: none;
         padding-bottom: 1px;
+        &.secondary-header {
+            image-rendering: pixelated;
+        }
     }
     &.success {
         background: linear-gradient(var(--section), var(--success-c));
@@ -224,7 +226,7 @@ section {
         box-shadow: inset 0 -6px 12px var(--success-b);
         .title-bar {
             background: linear-gradient(90deg, var(--success-b), var(--success-c));
-            border-color: var(--success);
+            outline-color: var(--success);
         }
     }
     &.warning {
@@ -233,7 +235,7 @@ section {
         box-shadow: inset 0 -6px 12px var(--warning-b);
         .title-bar {
             background: linear-gradient(90deg, var(--warning-b), var(--warning-c));
-            border-color: var(--warning);
+            outline-color: var(--warning);
         }
     }
     &.danger {
@@ -242,7 +244,7 @@ section {
         box-shadow: inset 0 -6px 12px var(--danger-b);
         .title-bar {
             background: linear-gradient(90deg, var(--danger-b), var(--danger-c));
-            border-color: var(--danger);
+            outline-color: var(--danger);
         }
     }
     &.important {
@@ -251,7 +253,7 @@ section {
         box-shadow: inset 0 -6px 12px var(--accent-b);
         .title-bar {
             background: linear-gradient(90deg, var(--accent-b), var(--accent-c));
-            border-color: var(--accent);
+            outline-color: var(--accent);
         }
     }
 }
@@ -317,7 +319,7 @@ iframe {
     display: block;
     border: none;
 }
-code, textarea {
+code, textarea, .key {
     font-size: 0.8em;
     font-family: "Ubuntu Mono", monospace;
     text-shadow: none;
@@ -325,6 +327,16 @@ code, textarea {
     background-color: var(--section-b);
     border: dashed 1px var(--border);
     border-radius: 4px;
+}
+.key {
+    display: inline-block;
+    position: relative;
+    translate: 0 -2px;
+    margin: 0 2px;
+    padding: 0 4px;
+    border-style: solid;
+    box-shadow: 0 3px var(--border);
+    box-shadow: 0 3px var(--border);
 }
 textarea {
     display: block;
@@ -431,6 +443,7 @@ marquee {
     }
 }
 .badge {
+    image-rendering: pixelated;
     position: relative;
     z-index: 1;
     display: inline-block;
@@ -452,6 +465,7 @@ marquee {
     }
 }
 .icon {
+    image-rendering: pixelated;
     display: inline-block;
     height: 1em;
     margin-bottom: -0.16em;
@@ -508,6 +522,7 @@ marquee {
     }
 }
 #footer {
+    image-rendering: pixelated;
     img {
         filter: brightness(0.3); 
     }
