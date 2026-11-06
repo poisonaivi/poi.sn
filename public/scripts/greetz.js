@@ -90,8 +90,8 @@ function updateFunTitle() {
         "carcinogenic only in california"
     ];
     document.getElementById("funTitle").innerHTML = "";
-    // nextTitle(titles[Math.floor(Math.random() * titles.length)]);
-    nextTitle(titles[titles.length - 1]);
+    nextTitle(titles[Math.floor(Math.random() * titles.length)]);
+    // nextTitle(titles[titles.length - 1]);
     setInterval(() => {
         nextTitle(titles[Math.floor(Math.random() * titles.length)]);
     }, 10000);
