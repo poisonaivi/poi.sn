@@ -84,11 +84,14 @@ function updateFunTitle() {
         "don't mind the mess",
         "i gotta head to class",
         "do not consume in large quantities",
-        "change requires change"
+        "change requires change",
+        "she's purple for an amazing reason",
+        "this product contains chemicals",
+        "carcinogenic only in california"
     ];
     document.getElementById("funTitle").innerHTML = "";
-    nextTitle(titles[Math.floor(Math.random() * titles.length)]);
-    // nextTitle(titles[titles.length - 1]);
+    // nextTitle(titles[Math.floor(Math.random() * titles.length)]);
+    nextTitle(titles[titles.length - 1]);
     setInterval(() => {
         nextTitle(titles[Math.floor(Math.random() * titles.length)]);
     }, 10000);
