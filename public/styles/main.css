@@ -173,7 +173,7 @@ a, a p {
 a > .tinted:hover.badge, a > .badge:hover {
     filter: brightness(1.3);
 }
-s {
+s, del {
     opacity: 0.5;
 }
 section {

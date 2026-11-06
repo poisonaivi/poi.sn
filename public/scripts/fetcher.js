@@ -9,7 +9,7 @@ async function updateDiscord() {
             presenceLabel.innerHTML = "STATUS";
             presenceLabel.className = "danger";
             presenceIcon.className = "icon inline-left danger";
-            presenceIcon.src = "/assets/branding/discord.png";
+            presenceIcon.src = "assets/branding/discord.png";
             statusLabel.innerHTML = "<small class='danger'><img class='icon inline-left' src='/assets/icons/error.png'>api error</small>"
             discordSection.className = "danger";
             throw new Error("Failed to fetch.");
@@ -22,25 +22,25 @@ async function updateDiscord() {
             presenceLabel.innerHTML = "ONLINE";
             presenceLabel.className = "success";
             presenceIcon.className = "icon inline-left success";
-            presenceIcon.src = "/assets/icons/status-online.png";
+            presenceIcon.src = "assets/icons/status-online.png";
             discordSection.className = "success";
         // } else if (status == "idle") {
         //     presenceLabel.innerHTML = "IDLE";
         //     presenceLabel.className = "warning";
         //     presenceIcon.className = "icon inline-left warning";
-        //     presenceIcon.src = "/assets/icons/status-idle.png";
+        //     presenceIcon.src = "assets/icons/status-idle.png";
         //     discordSection.className = "warning";
         // } else if (status == "dnd") {
         //     presenceLabel.innerHTML = "DO NOT DISTURB";
         //     presenceLabel.className = "danger";
         //     presenceIcon.className = "icon inline-left danger";
-        //     presenceIcon.src = "/assets/icons/status-dnd.png";
+        //     presenceIcon.src = "assets/icons/status-dnd.png";
         //     discordSection.className = "danger";
         } else if (status == "offline" || status == "dnd") {
             presenceLabel.innerHTML = "OFFLINE";
             presenceLabel.className = "danger";
             presenceIcon.className = "icon inline-left danger";
-            presenceIcon.src = "/assets/icons/status-offline.png";
+            presenceIcon.src = "assets/icons/status-offline.png";
             discordSection.className = "danger";
         }
         let statusLabelText = statusText;
