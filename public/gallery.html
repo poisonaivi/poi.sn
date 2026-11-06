@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.38">
     <title>gallery - poi.sn</title>
-    <script src="/scripts/loader.js"></script>
-    <script src="/scripts/lightbox.js"></script>
-    <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="/styles/lightbox.css">
-    <link rel="icon" href="/assets/branding/favicon.png">
+    <script src="scripts/loader.js"></script>
+    <script src="scripts/lightbox.js"></script>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/lightbox.css">
+    <link rel="icon" href="assets/branding/favicon.png">
 </head>
 <div id="lightbox">
     <div onclick="hideLightbox();" style="position: absolute; z-index: 19; width: 100%; height: 100%;"></div>
@@ -21,14 +21,14 @@
                             <td style="width: 50%; text-align: center;">
                                 <a>
                                     <section onclick="hideLightbox();" class="danger" style="cursor: var(--cursor-pointer); border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0;">
-                                        <span class="danger noselect"><img class="icon inline-left" src="/assets/icons/x.png">close</span>
+                                        <span class="danger noselect"><img class="icon inline-left" src="assets/icons/x.png">close</span>
                                     </section>
                                 </a>
                             </td>
                             <td style="width: 50%; text-align: center;">
                                 <a>
                                     <section onclick="shareLightbox();" style="cursor: var(--cursor-pointer); border-top-left-radius: 0; border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
-                                        <span class="success noselect"><img class="icon inline-left" src="/assets/icons/share.png">share</span>
+                                        <span class="success noselect"><img class="icon inline-left" src="assets/icons/share.png">share</span>
                                     </section>
                                 </a>
                             </td>
@@ -37,14 +37,14 @@
                             <td style="width: 50%; text-align: center;">
                                 <a>
                                     <section onclick="showLightbox('next');" style="cursor: var(--cursor-pointer); border-top-right-radius: 0; border-bottom-right-radius: 0; border-top-left-radius: 0;">
-                                        <span class="important noselect"><img class="icon inline-left" src="/assets/icons/arrow-ll.png">next</span>
+                                        <span class="important noselect"><img class="icon inline-left" src="assets/icons/arrow-ll.png">next</span>
                                     </section>
                                 </a>
                             </td>
                             <td style="width: 50%; text-align: center;">
                                 <a>
                                     <section onclick="showLightbox('prev');" style="cursor: var(--cursor-pointer); border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0;">
-                                        <span class="important noselect">previous<img class="icon inline-right" src="/assets/icons/arrow-rr.png"></span>
+                                        <span class="important noselect">previous<img class="icon inline-right" src="assets/icons/arrow-rr.png"></span>
                                     </section>
                                 </a>
                             </td>
@@ -52,7 +52,7 @@
                     </table>
                     <section>
                         <div class="title-bar">
-                            <small class="bright text"><img class="icon inline-left" src="/assets/icons/info.png">INFO</small>
+                            <small class="bright text"><img class="icon inline-left" src="assets/icons/info.png">INFO</small>
                         </div>
                         <p><small><span id="fill-id"></span></small></p>
                         <h3><i><span id="fill-title"></span></i></h3>
@@ -60,11 +60,11 @@
                         <table style="width: 100%">
                             <tr>
                                 <td style="width: 50%">
-                                    <p><small><img class="icon inline-left" src="/assets/icons/calendar.png">completed</small></p>
+                                    <p><small><img class="icon inline-left" src="assets/icons/calendar.png">completed</small></p>
                                     <p id="fill-date" style="padding-right: 4px"></p>
                                 </td>
                                 <td style="width: 50%">
-                                    <p><small><img class="icon inline-left" src="/assets/icons/layer.png">medium</small></p>
+                                    <p><small><img class="icon inline-left" src="assets/icons/layer.png">medium</small></p>
                                     <p id="fill-medium"></p>
                                 </td>
                             </tr>
@@ -72,16 +72,16 @@
                         <hr>
                         <p id="fill-description"></p>
                         <br>
-                        <p><small><img class="icon inline-left" src="/assets/icons/eye.png"><span id="fill-alt"></span></small></p>
+                        <p><small><img class="icon inline-left" src="assets/icons/eye.png"><span id="fill-alt"></span></small></p>
                         <hr>
                         <table style="width: 100%">
                             <tr>
                                 <td style="width: 50%">
-                                    <p><small><img class="icon inline-left" src="/assets/icons/link.png">source</small></p>
+                                    <p><small><img class="icon inline-left" src="assets/icons/link.png">source</small></p>
                                     <p><small id="fill-source"></small></p>
                                 </td>
                                 <td style="width: 50%">
-                                    <p><small><img class="icon inline-left" src="/assets/icons/document.png">license</small></p>
+                                    <p><small><img class="icon inline-left" src="assets/icons/document.png">license</small></p>
                                     <p><small id="fill-license"></small></p>
                                 </td>
                             </tr>
@@ -100,37 +100,37 @@
     </main>
 </div>
 <body>
-    <div id="accessibility"><script defer src="/scripts/accessibility.js"></script></div>
+    <div id="accessibility"><script defer src="scripts/accessibility.js"></script></div>
     <main>
-        <header id="header"><script defer src="/scripts/header.js"></script><noscript><section class="danger"><div class="title-bar"><small class="bright danger"><img class="icon inline-left" src="/assets/icons/error.png">ERROR</small></div><h3 class="danger">JavaScript disabled</h3><p>congrats, you tripped the noscript element! this site isn't gonna steal your data, but it relies on scripts to display navigation elements, fetch widget content, and apply accessibility settings. consider <a href="https://javascript.aivi.party/" target="_blank">enabling JavaScript</a> or whitelisting this site</p><br><p><a href="/index.html"><img class="icon inline-left" src="/assets/icons/arrow-rr.png" style="animation: shake 1s steps(1) infinite;">return home<img class="icon inline-right" src="/assets/icons/arrow-ll.png" style="animation: shake 1s steps(1) infinite; animation-delay: 500ms;"></a></p></section></noscript></header>
+        <header id="header"><script defer src="scripts/header.js"></script><noscript><section class="danger"><div class="title-bar"><small class="bright danger"><img class="icon inline-left" src="assets/icons/error.png">ERROR</small></div><h3 class="danger">JavaScript disabled</h3><p>congrats, you tripped the noscript element! this site isn't gonna steal your data, but it relies on scripts to display navigation elements, fetch widget content, and apply accessibility settings. consider <a href="https://javascript.aivi.party/" target="_blank">enabling JavaScript</a> or whitelisting this site</p><br><p><a href="index.html"><img class="icon inline-left" src="assets/icons/arrow-rr.png" style="animation: shake 1s steps(1) infinite;">return home<img class="icon inline-right" src="assets/icons/arrow-ll.png" style="animation: shake 1s steps(1) infinite; animation-delay: 500ms;"></a></p></section></noscript></header>
         <table>
             <tr style="height: 1px;">
                 <td class="primaryColumn" style="height: inherit;">
                     <section style="box-sizing: border-box; min-height: 160px; height: calc(100% - var(--border-spacing))">
                         <h3>art by poisonaivi</h3>
-                        <p>a gallery of fur and eraser bits. <span class="important">click an image to <img class="icon inline-left" src="/assets/icons/fullscreen.png">enlarge it.</span></p>
-                        <p>for commissions, visit my <a href="/commissions.html">commissions page</a></p>
+                        <p>a gallery of fur and eraser bits. <span class="important">click an image to <img class="icon inline-left" src="assets/icons/fullscreen.png">enlarge it.</span></p>
+                        <p>for commissions, visit my <a href="commissions.html">commissions page</a></p>
                         <br>
-                        <p><small><img class="icon inline-left" src="/assets/icons/tag.png">= commercially licensed</small></p>
+                        <p><small><img class="icon inline-left" src="assets/icons/tag.png">= commercially licensed</small></p>
                     </section>
                 </td>
                 <td class="secondaryColumn">
                     <section>
                         <div class="title-bar">
-                            <small class="bright text"><img class="icon inline-left" src="/assets/icons/link.png">SOURCES</small>
+                            <small class="bright text"><img class="icon inline-left" src="assets/icons/link.png">SOURCES</small>
                         </div>
-                        <p><a href="https://bsky.app/profile/poi.sn" target="_blank"><img class="icon inline-left" src="/assets/branding/bluesky.png">Bluesky</a> <small>poi.sn</small></p>
+                        <p><a href="https://bsky.app/profile/poi.sn" target="_blank"><img class="icon inline-left" src="assets/branding/bluesky.png">Bluesky</a> <small>poi.sn</small></p>
                         <br>
-                        <p><a href="https://www.deviantart.com/poisonaivi" target="_blank"><img class="icon inline-left" src="/assets/branding/deviantart.png">deviantART</a> <small>PoisonAivi</small></p>
+                        <p><a href="https://www.deviantart.com/poisonaivi" target="_blank"><img class="icon inline-left" src="assets/branding/deviantart.png">deviantART</a> <small>PoisonAivi</small></p>
                         <br>
-                        <p><a href="https://cara.app/poisonaivi" target="_blank"><img class="icon inline-left" src="/assets/branding/cara.png">Cara</a> <small>@poisonaivi</small></p>
+                        <p><a href="https://cara.app/poisonaivi" target="_blank"><img class="icon inline-left" src="assets/branding/cara.png">Cara</a> <small>@poisonaivi</small></p>
                     </section>
                 </td>
             </tr>
         </table>
         <section>
             <div class="title-bar">
-                <small class="bright text"><img class="icon inline-left" src="/assets/icons/bookmark.png">2026</small>
+                <small class="bright text"><img class="icon inline-left" src="assets/icons/bookmark.png">2026</small>
             </div>
             <div class="thumbnailContainer">
                 <section class="art thumbnail" id="art2609" onclick="showLightbox('art2609');" style="flex-basis: 20%;">
@@ -157,7 +157,7 @@
                 </section>
                 <section class="art thumbnail" id="art2607" onclick="showLightbox('art2607');" style="flex-basis: 30%;">
                     <div class="title-bar">
-                        <small class="bright text"><img class="icon inline-left" src="/assets/icons/tag.png">Pyanodons Velociraptor</small>
+                        <small class="bright text"><img class="icon inline-left" src="assets/icons/tag.png">Pyanodons Velociraptor</small>
                     </div>
                     <img class="thumbnailImage" alt="A cute green velociraptor with a hard hat from the hit modpack Pyanodons for the hit game Factorio." style="object-position: 50% 10%;" src="https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ouvu3umdjiwzywo53srxspur/bafkreibmz5ywck3oqaanjumcqfz2hdm7dneqibc2ijh34um6q3e35t3jqe@jpeg">
                     <span class="hiddenData data-date">May 30, 2026</span>
@@ -237,7 +237,7 @@
         </section>
         <section>
             <div class="title-bar">
-                <small class="bright text"><img class="icon inline-left" src="/assets/icons/bookmark.png">2025</small>
+                <small class="bright text"><img class="icon inline-left" src="assets/icons/bookmark.png">2025</small>
             </div>
             <div class="thumbnailContainer">
                 <section class="art thumbnail" id="art2521" onclick="showLightbox('art2521');">
@@ -476,7 +476,7 @@
         </section>
         <section>
             <div class="title-bar">
-                <small class="bright text"><img class="icon inline-left" src="/assets/icons/bookmark.png">2024</small>
+                <small class="bright text"><img class="icon inline-left" src="assets/icons/bookmark.png">2024</small>
             </div>
             <div class="thumbnailContainer">
                 <section class="art thumbnail" id="art2417" onclick="showLightbox('art2417');" style="flex-basis: 20%;">
@@ -669,7 +669,7 @@
                 </section>
             </div>
         </section>
-        <footer id="footer"><script defer src="/scripts/footer.js"></script></footer> 
+        <footer id="footer"><script defer src="scripts/footer.js"></script></footer> 
     </main>
 </body>
 </html>

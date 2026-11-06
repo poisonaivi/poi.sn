@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.38">
     <title>projects - poi.sn</title>
-    <script src="/scripts/loader.js"></script>
-    <script src="/scripts/lightbox.js"></script>
-    <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="/styles/lightbox.css">
-    <link rel="stylesheet" href="/styles/fonts.css">
-    <link rel="icon" href="/assets/branding/favicon.png">
+    <script src="scripts/loader.js"></script>
+    <script src="scripts/lightbox.js"></script>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/lightbox.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="icon" href="assets/branding/favicon.png">
 </head>
 <body>
-    <div id="accessibility" hidden><script defer src="/scripts/accessibility.js"></script></div>
+    <div id="accessibility" hidden><script defer src="scripts/accessibility.js"></script></div>
     <div id="lightbox">
         <div onclick="hideLightbox();" style="position: absolute; z-index: 19; width: 100%; height: 100%;"></div>
         <main class="accessory">
@@ -24,14 +24,14 @@
                                 <td style="width: 50%; text-align: center;">
                                     <a>
                                         <section onclick="hideLightbox();" class="danger" style="cursor: var(--cursor-pointer); border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0;">
-                                            <span class="danger noselect"><img class="icon inline-left" src="/assets/icons/x.png">close</span>
+                                            <span class="danger noselect"><img class="icon inline-left" src="assets/icons/x.png">close</span>
                                         </section>
                                     </a>
                                 </td>
                                 <td style="width: 50%; text-align: center;">
                                     <a>
                                         <section onclick="shareLightbox();" style="cursor: var(--cursor-pointer); border-top-left-radius: 0; border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
-                                            <span class="success noselect"><img class="icon inline-left" src="/assets/icons/share.png">share</span>
+                                            <span class="success noselect"><img class="icon inline-left" src="assets/icons/share.png">share</span>
                                         </section>
                                     </a>
                                 </td>
@@ -40,14 +40,14 @@
                                 <td style="width: 50%; text-align: center;">
                                     <a>
                                         <section onclick="showLightbox('next');" style="cursor: var(--cursor-pointer); border-top-right-radius: 0; border-bottom-right-radius: 0; border-top-left-radius: 0;">
-                                            <span class="important noselect"><img class="icon inline-left" src="/assets/icons/arrow-ll.png">next</span>
+                                            <span class="important noselect"><img class="icon inline-left" src="assets/icons/arrow-ll.png">next</span>
                                         </section>
                                     </a>
                                 </td>
                                 <td style="width: 50%; text-align: center;">
                                     <a>
                                         <section onclick="showLightbox('prev');" style="cursor: var(--cursor-pointer); border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0;">
-                                            <span class="important noselect">previous<img class="icon inline-right" src="/assets/icons/arrow-rr.png"></span>
+                                            <span class="important noselect">previous<img class="icon inline-right" src="assets/icons/arrow-rr.png"></span>
                                         </section>
                                     </a>
                                 </td>
@@ -55,22 +55,22 @@
                         </table>
                         <section>
                             <div class="title-bar">
-                                <small class="bright text"><img class="icon inline-left" src="/assets/icons/info.png">INFO</small>
+                                <small class="bright text"><img class="icon inline-left" src="assets/icons/info.png">INFO</small>
                             </div>
                             <p><small><span id="fill-id"></span></small></p>
                             <h3><span id="fill-title"></span></h3>
                             <br>
-                            <p><small><img class="icon inline-left" src="/assets/icons/link.png">link</small></p>
+                            <p><small><img class="icon inline-left" src="assets/icons/link.png">link</small></p>
                             <p id="fill-link"></p>
                             <hr>
                             <table style="width: 100%">
                                 <tr>
                                     <td style="width: 50%">
-                                        <p><small><img class="icon inline-left" src="/assets/icons/calendar.png">created</small></p>
+                                        <p><small><img class="icon inline-left" src="assets/icons/calendar.png">created</small></p>
                                         <p id="fill-date" style="padding-right: 4px"></p>
                                     </td>
                                     <td style="width: 50%">
-                                        <p><small><img class="icon inline-left" src="/assets/icons/hammer.png">tools</small></p>
+                                        <p><small><img class="icon inline-left" src="assets/icons/hammer.png">tools</small></p>
                                         <p id="fill-tools"></p>
                                     </td>
                                 </tr>
@@ -81,11 +81,11 @@
                             <table style="width: 100%">
                                 <tr>
                                     <td style="width: 50%">
-                                        <p><small><img class="icon inline-left" src="/assets/icons/book.png">readme</small></p>
+                                        <p><small><img class="icon inline-left" src="assets/icons/book.png">readme</small></p>
                                         <p><small id="fill-readme" style="padding-right: 4px"></small></p>
                                     </td>
                                     <td style="width: 50%">
-                                        <p><small><img class="icon inline-left" src="/assets/icons/code.png">source</small></p>
+                                        <p><small><img class="icon inline-left" src="assets/icons/code.png">source</small></p>
                                         <p><small id="fill-source"></small></p>
                                     </td>
                                 </tr>
@@ -104,7 +104,7 @@
         </main>
     </div>
     <main>
-        <header id="header"><script defer src="/scripts/header.js"></script><noscript><section class="danger"><div class="title-bar"><small class="bright danger"><img class="icon inline-left" src="/assets/icons/error.png">ERROR</small></div><h3 class="danger">JavaScript disabled</h3><p>congrats, you tripped the noscript element! this site isn't gonna steal your data, but it relies on scripts to display navigation elements, fetch widget content, and apply accessibility settings. consider <a href="https://javascript.aivi.party/" target="_blank">enabling JavaScript</a> or whitelisting this site</p><br><p><a href="/index.html"><img class="icon inline-left" src="/assets/icons/arrow-rr.png" style="animation: shake 1s steps(1) infinite;">return home<img class="icon inline-right" src="/assets/icons/arrow-ll.png" style="animation: shake 1s steps(1) infinite; animation-delay: 500ms;"></a></p></section></noscript></header>
+        <header id="header"><script defer src="scripts/header.js"></script><noscript><section class="danger"><div class="title-bar"><small class="bright danger"><img class="icon inline-left" src="assets/icons/error.png">ERROR</small></div><h3 class="danger">JavaScript disabled</h3><p>congrats, you tripped the noscript element! this site isn't gonna steal your data, but it relies on scripts to display navigation elements, fetch widget content, and apply accessibility settings. consider <a href="https://javascript.aivi.party/" target="_blank">enabling JavaScript</a> or whitelisting this site</p><br><p><a href="index.html"><img class="icon inline-left" src="assets/icons/arrow-rr.png" style="animation: shake 1s steps(1) infinite;">return home<img class="icon inline-right" src="assets/icons/arrow-ll.png" style="animation: shake 1s steps(1) infinite; animation-delay: 500ms;"></a></p></section></noscript></header>
         <table>
             <tr style="height: 1px;">
                 <td class="primaryColumn" style="height: inherit;">
@@ -116,28 +116,28 @@
                 <td class="secondaryColumn">
                     <section>
                         <div class="title-bar">
-                            <small class="bright text"><img class="icon inline-left" src="/assets/icons/list.png">CONTENTS</small>
+                            <small class="bright text"><img class="icon inline-left" src="assets/icons/list.png">CONTENTS</small>
                         </div>
                         <p><small>jump to...</small></p>
-                        <p><a href="#code-projects"><img class="icon inline-left" src="/assets/icons/code.png">coding projects</a></p>
+                        <p><a href="#code-projects"><img class="icon inline-left" src="assets/icons/code.png">coding projects</a></p>
                         <br>
-                        <p><a href="#build-projects"><img class="icon inline-left" src="/assets/icons/hammer.png">builds</a></p>
+                        <p><a href="#build-projects"><img class="icon inline-left" src="assets/icons/hammer.png">builds</a></p>
                         <br>
-                        <p><a href="#font-projects"><img class="icon inline-left" src="/assets/icons/font.png">typefaces</a></p>
+                        <p><a href="#font-projects"><img class="icon inline-left" src="assets/icons/font.png">typefaces</a></p>
                     </section>
                 </td>
             </tr>
         </table>
         <section id="code-projects">
             <div class="title-bar">
-                <small class="bright text"><img class="icon inline-left" src="/assets/icons/code.png">CODE</small>
+                <small class="bright text"><img class="icon inline-left" src="assets/icons/code.png">CODE</small>
             </div>
             <div class="thumbnailContainer">
                 <section class="important project thumbnail" id="prj5012" onclick="showLightbox('prj5012');" style="max-width: 47%;">
                     <div class="title-bar">
-                        <small class="bright important text"><img class="icon inline-left" src="/assets/icons/star.png">FEATURED - time.aivi.party</small>
+                        <small class="bright important text"><img class="icon inline-left" src="assets/icons/star.png">FEATURED - time.aivi.party</small>
                     </div>
-                    <img class="thumbnailImage" style="object-position: 50% 50%;" src="/assets/projects/time.jpeg">
+                    <img class="thumbnailImage" style="object-position: 50% 50%;" src="assets/projects/time.jpeg">
                     <div class="thumbnailText">
                         <h3 class="important data-title">time.aivi.party</h3>
                         <p class="data-short">A better, prettier world clock.</p>
@@ -147,13 +147,13 @@
                     <span class="hiddenData data-tools">JavaScript, HTML, CSS</span>
                     <span class="hiddenData data-description">A really pretty world clock and timezone visualizer that lets you quickly convert and compare timezones.</span>
                     <span class="hiddenData data-source"><a href="https://github.com/poisonaivi/time.aivi.party" target="_blank">GitHub</a></span>
-                    <span class="hiddenData data-readme"><a href="/blog/better-world-clock.html" target="_blank">blog</a></span>
+                    <span class="hiddenData data-readme"><a href="blog/better-world-clock.html" target="_blank">blog</a></span>
                 </section>
                 <section class="project thumbnail" id="prj5011" onclick="showLightbox('prj5011');" style="flex-basis: 40%;">
                     <div class="title-bar">
                         <small class="bright text">meowgen</small>
                     </div>
-                    <img class="thumbnailImage" style="object-position: 50% 0%;" src="/assets/projects/meowgen.jpeg">
+                    <img class="thumbnailImage" style="object-position: 50% 0%;" src="assets/projects/meowgen.jpeg">
                     <div class="thumbnailText">
                         <h3 class="important data-title">meowgen</h3>
                         <p class="data-short">Generate meows. meow meow meow</p>
@@ -169,7 +169,7 @@
                     <div class="title-bar">
                         <small class="bright text">driveUD beta</small>
                     </div>
-                    <img class="thumbnailImage" style="object-position: 50% 50%;" src="/assets/projects/driveUD.jpeg">
+                    <img class="thumbnailImage" style="object-position: 50% 50%;" src="assets/projects/driveUD.jpeg">
                     <div class="thumbnailText">
                         <h3 class="important data-title">driveUD beta</h3>
                         <p class="data-short">An attempt at optical self-driving for Roblox.</p>
@@ -185,7 +185,7 @@
                     <div class="title-bar">
                         <small class="bright text">Enable Javascript!</small>
                     </div>
-                    <img class="thumbnailImage" style="object-position: 50% 50%;" src="/assets/projects/enable-javascript.jpeg">
+                    <img class="thumbnailImage" style="object-position: 50% 50%;" src="assets/projects/enable-javascript.jpeg">
                     <div class="thumbnailText">
                         <h3 class="important data-title">Enable Javascript!</h3>
                         <p class="data-short">Go-to page for JavaScript-disabling users.</p>
@@ -201,7 +201,7 @@
                     <div class="title-bar">
                         <small class="bright text">neuMetronome</small>
                     </div>
-                    <img class="thumbnailImage" style="object-position: 50% 100%;" src="/assets/projects/neuMetronome.jpeg">
+                    <img class="thumbnailImage" style="object-position: 50% 100%;" src="assets/projects/neuMetronome.jpeg">
                     <div class="thumbnailText">
                         <h3 class="important data-title">neuMetronome</h3>
                         <p class="data-short">A neumorphic metronome with many features.</p>
@@ -217,7 +217,7 @@
                     <div class="title-bar">
                         <small class="bright text">calculateUD v2</small>
                     </div>
-                    <img class="thumbnailImage" style="object-position: 50% 0%;" src="/assets/projects/calculateUD.jpeg">
+                    <img class="thumbnailImage" style="object-position: 50% 0%;" src="assets/projects/calculateUD.jpeg">
                     <div class="thumbnailText">
                         <h3 class="important data-title">calculateUD v2</h3>
                         <p class="data-short">Ultimate Driving series grinding calculator.</p>
@@ -233,7 +233,7 @@
                     <div class="title-bar">
                         <small class="bright text">stupidCalculator</small>
                     </div>
-                    <img class="thumbnailImage" style="object-position: 50% 0%;" src="/assets/projects/stupidCalculator.jpeg">
+                    <img class="thumbnailImage" style="object-position: 50% 0%;" src="assets/projects/stupidCalculator.jpeg">
                     <div class="thumbnailText">
                         <h3 class="important data-title">stupidCalculator</h3>
                         <p class="data-short">A CLI-style calulator that's really dumb.</p>
@@ -249,7 +249,7 @@
                     <div class="title-bar">
                         <small class="bright text">stupidCalendar</small>
                     </div>
-                    <img class="thumbnailImage" style="object-position: 50% 0%;" src="/assets/projects/stupidCalendar.jpeg">
+                    <img class="thumbnailImage" style="object-position: 50% 0%;" src="assets/projects/stupidCalendar.jpeg">
                     <div class="thumbnailText">
                         <h3 class="important data-title">stupidCalendar</h3>
                         <p class="data-short">A really useless date/time display.</p>
@@ -265,7 +265,7 @@
                     <div class="title-bar">
                         <small class="bright text">calculator_</small>
                     </div>
-                    <img class="thumbnailImage" style="object-position: 50% 35%;" src="/assets/projects/calculator_.jpeg">
+                    <img class="thumbnailImage" style="object-position: 50% 35%;" src="assets/projects/calculator_.jpeg">
                     <div class="thumbnailText">
                         <h3 class="important data-title">calculator_</h3>
                         <p class="data-short">Scratch-based graphing calculator.</p>
@@ -281,7 +281,7 @@
                     <div class="title-bar">
                         <small class="bright text">SPrint Lite</small>
                     </div>
-                    <img class="thumbnailImage" style="object-position: 50% 0%;" src="/assets/projects/sprint-lite.jpeg">
+                    <img class="thumbnailImage" style="object-position: 50% 0%;" src="assets/projects/sprint-lite.jpeg">
                     <div class="thumbnailText">
                         <h3 class="important data-title">SPrint Lite</h3>
                         <p class="data-short">A lightweight text rendering engine for Scratch.</p>
@@ -297,7 +297,7 @@
                     <div class="title-bar">
                         <small class="bright text">SPrint Pro</small>
                     </div>
-                    <img class="thumbnailImage" style="object-position: 50% 100%;" src="/assets/projects/sprint-pro.jpeg">
+                    <img class="thumbnailImage" style="object-position: 50% 100%;" src="assets/projects/sprint-pro.jpeg">
                     <div class="thumbnailText">
                         <h3 class="important data-title">SPrint Pro</h3>
                         <p class="data-short">A rich text rendering engine for Scratch.</p>
@@ -313,7 +313,7 @@
                     <div class="title-bar">
                         <small class="bright text">mandelbrotter</small>
                     </div>
-                    <img class="thumbnailImage" style="object-position: 50% 35%;" src="/assets/projects/mandelbrotter.jpeg">
+                    <img class="thumbnailImage" style="object-position: 50% 35%;" src="assets/projects/mandelbrotter.jpeg">
                     <div class="thumbnailText">
                         <h3 class="important data-title">mandelbrotter</h3>
                         <p class="data-short">A Scratch-based fractal rendering engine.</p>
@@ -330,14 +330,14 @@
         </section>
         <section id="build-projects">
             <div class="title-bar">
-                <small class="bright text"><img class="icon inline-left" src="/assets/icons/hammer.png">BUILDS</small>
+                <small class="bright text"><img class="icon inline-left" src="assets/icons/hammer.png">BUILDS</small>
             </div>
             <div class="thumbnailContainer">
                 <section class="project thumbnail" id="prj4904" onclick="showLightbox('prj4904');" style="flex-basis: 40%;">
                     <div class="title-bar">
                         <small class="bright text">3DP-Laser</small>
                     </div>
-                    <img class="thumbnailImage" style="object-position: 50% 50%;" src="/assets/projects/laser.jpeg">
+                    <img class="thumbnailImage" style="object-position: 50% 50%;" src="assets/projects/laser.jpeg">
                     <div class="thumbnailText">
                         <h3 class="important data-title">3DP-Laser</h3>
                         <p class="data-short">A minimal redesigned enclosure for cat lasers.</p>
@@ -353,7 +353,7 @@
                     <div class="title-bar">
                         <small class="bright text">RP Guitar</small>
                     </div>
-                    <img class="thumbnailImage" style="object-position: 50% 50%;" src="/blog/assets/placeholder-image.png">
+                    <img class="thumbnailImage" style="object-position: 50% 50%;" src="blog/assets/placeholder-image.jpeg">
                     <div class="thumbnailText">
                         <h3 class="important data-title">RP Guitar</h3>
                         <p class="data-short">A custom wooden Guitar Hero controller.</p>
@@ -369,7 +369,7 @@
                     <div class="title-bar">
                         <small class="bright text">Tensegrity</small>
                     </div>
-                    <img class="thumbnailImage" style="object-position: 50% 50%;" src="/assets/projects/tensegrity.jpeg">
+                    <img class="thumbnailImage" style="object-position: 50% 50%;" src="assets/projects/tensegrity.jpeg">
                     <div class="thumbnailText">
                         <h3 class="important data-title">Tensegrity</h3>
                         <p class="data-short">A handmade floating table.</p>
@@ -385,7 +385,7 @@
                     <div class="title-bar">
                         <small class="bright text">3DP-VR</small>
                     </div>
-                    <img onload="openSharedLightbox();" class="thumbnailImage" style="object-position: 50% 50%;" src="/assets/projects/3DP-VR.jpeg">
+                    <img onload="openSharedLightbox();" class="thumbnailImage" style="object-position: 50% 50%;" src="assets/projects/3DP-VR.jpeg">
                     <div class="thumbnailText">
                         <h3 class="important data-title">3DP-VR</h3>
                         <p class="data-short">A 3D-printed VR viewer.</p>
@@ -402,7 +402,7 @@
         </section>
         <section id="font-projects">
             <div class="title-bar">
-                <small class="bright text"><img class="icon inline-left" src="/assets/icons/font.png">TYPEFACES</small>
+                <small class="bright text"><img class="icon inline-left" src="assets/icons/font.png">TYPEFACES</small>
             </div>
             <section>
                 <div class="title-bar">
@@ -412,15 +412,15 @@
                 <table style="width: 100%">
                     <tr>
                         <td style="width: 33%">
-                            <p><small><img class="icon inline-left" src="/assets/icons/book.png">learn more</small></p>
-                            <p><a href="/blog/monopix.html" target="_blank">read about this typeface</a></p>
+                            <p><small><img class="icon inline-left" src="assets/icons/book.png">learn more</small></p>
+                            <p><a href="blog/monopix.html" target="_blank">read about this typeface</a></p>
                         </td>
                         <td style="width: 33%">
-                            <p><small><img class="icon inline-left" src="/assets/icons/download.png">download</small></p>
-                            <p><a href="/blog/monopix.html" target="_blank">download options</a></p>
+                            <p><small><img class="icon inline-left" src="assets/icons/download.png">download</small></p>
+                            <p><a href="blog/monopix.html" target="_blank">download options</a></p>
                         </td>
                         <td style="width: 33%">
-                            <p><small><img class="icon inline-left" src="/assets/icons/link.png">source</small></p>
+                            <p><small><img class="icon inline-left" src="assets/icons/link.png">source</small></p>
                             <p><a href="https://fontstruct.com/fontstructions/show/2776172/monopix-2" target="_blank">FontStruct</a></p>
                         </td>
                     </tr>
@@ -443,15 +443,15 @@
                 <table style="width: 100%">
                     <tr>
                         <td style="width: 33%">
-                            <p><small><img class="icon inline-left" src="/assets/icons/book.png">learn more</small></p>
-                            <p><a href="/blog/segris.html" target="_blank">read about this typeface</a></p>
+                            <p><small><img class="icon inline-left" src="assets/icons/book.png">learn more</small></p>
+                            <p><a href="blog/segris.html" target="_blank">read about this typeface</a></p>
                         </td>
                         <td style="width: 33%">
-                            <p><small><img class="icon inline-left" src="/assets/icons/download.png">download</small></p>
-                            <p><a href="/blog/segris.html" target="_blank">download options</a></p>
+                            <p><small><img class="icon inline-left" src="assets/icons/download.png">download</small></p>
+                            <p><a href="blog/segris.html" target="_blank">download options</a></p>
                         </td>
                         <td style="width: 33%">
-                            <p><small><img class="icon inline-left" src="/assets/icons/link.png">source</small></p>
+                            <p><small><img class="icon inline-left" src="assets/icons/link.png">source</small></p>
                             <p><a href="https://fontstruct.com/fontstructions/show/2816062/segris-16" target="_blank">FontStruct</a></p>
                         </td>
                     </tr>
@@ -471,11 +471,11 @@
                 <table style="width: 100%">
                     <tr>
                         <td style="width: 50%">
-                            <p><small><img class="icon inline-left" src="/assets/icons/download.png">download</small></p>
+                            <p><small><img class="icon inline-left" src="assets/icons/download.png">download</small></p>
                             <p><a href="https://fontstruct.com/fontstructions/download/2871342" target="_blank">download options</a></p>
                         </td>
                         <td style="width: 50%">
-                            <p><small><img class="icon inline-left" src="/assets/icons/link.png">source</small></p>
+                            <p><small><img class="icon inline-left" src="assets/icons/link.png">source</small></p>
                             <p><a href="https://fontstruct.com/fontstructions/show/2871342/targil" target="_blank">FontStruct</a></p>
                         </td>
                     </tr>
@@ -492,8 +492,8 @@
                 <table style="width: 100%">
                     <tr>
                         <td style="width: 100%">
-                            <p><small><img class="icon inline-left" src="/assets/icons/download.png">download</small></p>
-                            <p><a href="/assets/fonts/splice-dm.otf" target="_blank">download as .OTF</a></p>
+                            <p><small><img class="icon inline-left" src="assets/icons/download.png">download</small></p>
+                            <p><a href="assets/fonts/splice-dm.otf" target="_blank">download as .OTF</a></p>
                         </td>
                     </tr>
                 </table>
@@ -502,7 +502,7 @@
                 <p class="fontPreview text" style="font-family: 'Splice';">Sphinx of black quartz, judge my vow.</p>
             </section>
         </section>
-        <footer id="footer"><script defer src="/scripts/footer.js"></script></footer> 
+        <footer id="footer"><script defer src="scripts/footer.js"></script></footer> 
     </main>
 </body>
 </html>
