@@ -42,9 +42,11 @@ function accApply() {
     if (options[0]) {
         root.style.setProperty('--crt-filter', 'none');
         root.style.setProperty('--crt-overlay', 'none');
+        root.style.setProperty('--flicker-anim', 'none');
     } else {
         root.style.setProperty('--crt-filter', 'var(--d-crt-filter)');
         root.style.setProperty('--crt-overlay', 'var(--d-crt-overlay)');
+        root.style.setProperty('--flicker-anim', 'var(--d-flicker-anim');
     }
     if (options[1]) {
         root.style.setProperty('--border', '#858');

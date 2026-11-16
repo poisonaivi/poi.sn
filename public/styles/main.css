@@ -69,6 +69,8 @@
     --crt-overlay: var(--d-crt-overlay);
     --d-crt-filter: brightness(1.5) saturate(1.25) blur(0.5px);
     --crt-filter: var(--d-crt-filter);
+    --d-flicker-anim: 0.7s linear infinite flicker;
+    --flicker-anim: var(--d-flicker-anim);
     --d-font-family: "Monopix", "Ubuntu Mono", monospace;
     --font-family: var(--d-font-family);
     --d-font-family-s: "Monopix XS", "Ubuntu Mono", monospace;
@@ -562,4 +564,18 @@ marquee {
     100% {
         transform: translateX(-2px);
     }
+}
+@keyframes flicker {
+    0% {opacity: 1;}
+    4% {opacity: 0.6;}
+    8% {opacity: 0.9;}
+    14% {opacity: 0.7;}
+    30% {opacity: 1;}
+    50% {opacity: 1;}
+    55% {opacity: 0.7;}
+    64% {opacity: 0.8;}
+    69% {opacity: 1;}
+    80% {opacity: 0.8;}
+    84% {opacity: 1;}
+    100% {opacity: 1;}
 }
