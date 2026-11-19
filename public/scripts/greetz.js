@@ -86,8 +86,7 @@ function updateFunTitle() {
         "do not consume in large quantities",
         "change requires change",
         "she's purple for an amazing reason",
-        "this product contains chemicals",
-        "carcinogenic only in california"
+        "this product contains chemicals"
     ];
     document.getElementById("funTitle").innerHTML = "";
     nextTitle(titles[Math.floor(Math.random() * titles.length)]);

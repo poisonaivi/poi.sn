@@ -20,9 +20,9 @@
     --bg: #111;
     --bg-b: #1a1a1a;
     --text: #aaa;
-    --text-a: #ddd;
-    --text-b: #777;
-    --text-c: #666;
+    --text-a: #eee;
+    --text-b: #666;
+    --text-c: #555;
     --link: #b9f;
     --link-b: #86a;
     --link-c: #436;
@@ -61,7 +61,7 @@ h2 {
 h3 {
     font-size: 150%;
 }
-p {
+p, ul, ol {
     line-height: 180%;
     text-align: justify;
     margin-bottom: 2em;
@@ -123,6 +123,9 @@ code {
     &.inline-right {
         margin-left: 0.5em;
     }
+}
+.icon-item {
+    min-width: 190px;
 }
 .success {
     color: var(--success);
